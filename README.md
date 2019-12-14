@@ -19,7 +19,7 @@ Basically, you can refer to this link to finish the setting about the guest mach
 
 ## Problems you may meet:
 
-**1.About the WSL
+#### 1.About the WSL
 
 (1)If you meet a problem when you start your WSL(ubuntu), the problem would be like register distribution error, try to uninstall all your anti-virus software, reboot your system after you uninstall the software. (Disable the firewall as well)
 (2)Power shell should be executed with the administrator privilege (If os version is lower than 16000, there is no need to execute this command here).
@@ -27,7 +27,7 @@ Basically, you can refer to this link to finish the setting about the guest mach
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
 
-**2. About the service
+#### 2. About the service
 
 Basically, you can refer to this link to finish the setting about the guest machine and your host machine. Remember to replace using the mysql and apache server on WSL with XAMPP.
 If you download the mysql and apache service before on your WSL, try to purge them first. Otherwise, the ports will have conflicts.
@@ -37,10 +37,10 @@ sudo apt-get purge lamp-server^
 ```
 Once you get the report, it means your configuration is right.
 
-[cuckoo initializes right (without working directory)]{https://github.com/Wapiti08/cuckoo-download-instructions/blob/master/Cuckoo/cuckoo_success.PNG}
+![cuckoo initializes right (without working directory)]{https://github.com/Wapiti08/cuckoo-download-instructions/blob/master/Cuckoo/cuckoo_success.PNG}
 You need to disable the firewall and automatic update.
 
-[Disable the automatic update]{https://github.com/Wapiti08/cuckoo-download-instructions/blob/master/Cuckoo/check_update.PNG}
+![Disable the automatic update]{https://github.com/Wapiti08/cuckoo-download-instructions/blob/master/Cuckoo/check_update.PNG}
 Disable the version check in cuckoo cuckoo.conf
 ```
 version_check = no
@@ -59,7 +59,7 @@ Stop the cuckoo instance you have started before:
 
 work in a directory
 
-**3. Initialize the cuckoo web
+#### 3. Initialize the cuckoo web
 
 I met a problem when I start the cuckoo web:
 ```
@@ -80,7 +80,7 @@ Now, you can open your browser to type:
 ```
 http://localhost:8000/
 ```
-[Cheers!!!!]{https://github.com/Wapiti08/cuckoo-download-instructions/blob/master/Cuckoo/local_success.png}
+![Cheers!!!!]{https://github.com/Wapiti08/cuckoo-download-instructions/blob/master/Cuckoo/local_success.png}
 
 The following links you may need when you download the pip, Microsoft Visual C++ Compiler, etc:
 
