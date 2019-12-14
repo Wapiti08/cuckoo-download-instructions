@@ -37,10 +37,10 @@ sudo apt-get purge lamp-server^
 ```
 Once you get the report, it means your configuration is right.
 
-![cuckoo initializes right (without working directory)]{https://github.com/Wapiti08/cuckoo-download-instructions/blob/master/Cuckoo/cuckoo_success.PNG}
+![cuckoo initializes right (without working directory)](https://github.com/Wapiti08/cuckoo-download-instructions/blob/master/Cuckoo/cuckoo_success.PNG)
 You need to disable the firewall and automatic update.
 
-![Disable the automatic update]{https://github.com/Wapiti08/cuckoo-download-instructions/blob/master/Cuckoo/check_update.PNG}
+![Disable the automatic update](https://github.com/Wapiti08/cuckoo-download-instructions/blob/master/Cuckoo/check_update.PNG)
 Disable the version check in cuckoo cuckoo.conf
 ```
 version_check = no
@@ -80,7 +80,7 @@ Now, you can open your browser to type:
 ```
 http://localhost:8000/
 ```
-![Cheers!!!!]{https://github.com/Wapiti08/cuckoo-download-instructions/blob/master/Cuckoo/local_success.png}
+![Cheers!!!!](https://github.com/Wapiti08/cuckoo-download-instructions/blob/master/Cuckoo/local_success.png)
 
 The following links you may need when you download the pip, Microsoft Visual C++ Compiler, etc:
 
