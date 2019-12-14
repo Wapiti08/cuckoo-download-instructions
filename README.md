@@ -85,11 +85,14 @@ http://localhost:8000/
 The following links you may need when you download the pip, Microsoft Visual C++ Compiler, etc:
 
 https://www.gungorbudak.com/blog/2018/08/02/correct-installation-and-configuration-of-pip2-and-pip3/
+
 https://stackoverflow.com/questions/43645519/microsoft-visual-c-9-0-is-required
+
 https://www.microsoft.com/en-us/download/details.aspx?id=44266
 
 # Reference:
 https://docs.cuckoosandbox.org/en/latest/installation/guest/network/
+
 https://www.youtube.com/watch?v=nLGJHgv6uWA
 
 
