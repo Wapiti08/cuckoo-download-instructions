@@ -82,6 +82,13 @@ http://localhost:8000/
 ```
 ![Cheers!!!!](https://github.com/Wapiti08/cuckoo-download-instructions/blob/master/Cuckoo/local_success.png)
 
+
+I prefer to submit examples through cuckoo api:
+```
+cuckoo submit (path of malware examples)
+```
+Please don't add --package after submit, it won't work.
+
 The following links you may need when you download the pip, Microsoft Visual C++ Compiler, etc:
 
 https://www.gungorbudak.com/blog/2018/08/02/correct-installation-and-configuration-of-pip2-and-pip3/
