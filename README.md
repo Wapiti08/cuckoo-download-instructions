@@ -89,6 +89,29 @@ cuckoo submit (path of malware examples)
 ```
 Please don't add --package after submit, it won't work.
 
+#### Issues:
+
+(1) If your vms will shut off when you begin your cuckoo instance.
+
+You can modify the mode = headless to mode = gui in the virtualbox.conf under conf folder. So the cuckoo won’t shut off the vms any more!!!
+
+(2) If you meet problem about the permission of tcpdump(renamed Windump). You need to modify two places in sniffer.py (The location is easy to find with tool named everything).
+
+```
+for line in err.split(“\r\n”):
+if not line continue or line.startswith(err_whitelist_start):
+continue
+```
+
+```
+err_whitelist_start = (
+“tcpdump: listening on “,
+“/mnt/c/bin/tcpdump.exe: listening on “,
+```
+
+After you modify the path of tcpdump.exe. You need to add the same path to your auxiliary.conf under .cuckoo.
+
+
 The following links you may need when you download the pip, Microsoft Visual C++ Compiler, etc:
 
 https://www.gungorbudak.com/blog/2018/08/02/correct-installation-and-configuration-of-pip2-and-pip3/
