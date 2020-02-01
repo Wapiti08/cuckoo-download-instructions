@@ -2,7 +2,7 @@
 
 Coming from my article on medium [Cuckoo Configuration](https://medium.com/@Newt_Tan/cuckoo-configuration-f40a395995c0)
 
-This is the article about how to download and deploy the cuckoo for malware analysis. It took me around two months to figure it out(only with weekends of course).
+This is the article about how to download and deploy the cuckoo for malware analysis. It took me around two months to figure it out(only with weekends of course). The host machine is win10 with ubuntu WSL and the guset machine is win7X64.
 
 # Attention:
 When you download the python, make sure it is v2X. Cuckoo can only be run with python2X. So when you download any libraries with pip, make sure the pip is version2.
@@ -108,8 +108,17 @@ err_whitelist_start = (
 “tcpdump: listening on “,
 “/mnt/c/bin/tcpdump.exe: listening on “,
 ```
-
 After you modify the path of tcpdump.exe. You need to add the same path to your auxiliary.conf under .cuckoo.
+
+(3) If you meet the error: 
+```
+cuckoo is running. PID:xxx
+```
+On Windows command prompt:
+```
+taskkill /F /PID 8712(PID number)
+```
+
 
 
 The following links you may need when you download the pip, Microsoft Visual C++ Compiler, etc:
