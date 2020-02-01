@@ -108,6 +108,7 @@ err_whitelist_start = (
 “tcpdump: listening on “,
 “/mnt/c/bin/tcpdump.exe: listening on “,
 ```
+NOTE: The path should reflect the actual path to where you installed tcpdump.exe
 After you modify the path of tcpdump.exe. You need to add the same path to your auxiliary.conf under .cuckoo.
 
 (3) If you meet the error: 
