@@ -89,7 +89,7 @@ cuckoo submit (path of malware examples)
 ```
 Please don't add --package after submit, it won't work.
 
-#### Issues:
+#### 4. Issues:
 
 (1) If your vms will shut off when you begin your cuckoo instance.
 
@@ -108,7 +108,10 @@ err_whitelist_start = (
 “tcpdump: listening on “,
 “/mnt/c/bin/tcpdump.exe: listening on “,
 ```
-NOTE: The path should reflect the actual path to where you installed tcpdump.exe
+##### NOTE: The path should reflect the actual path to where you installed tcpdump.exe.
+
+Here is an example on WSL. If you download winpdump on your Win system, please modify it to your own path.
+
 After you modify the path of tcpdump.exe. You need to add the same path to your auxiliary.conf under .cuckoo.
 
 (3) If you meet the error: 
