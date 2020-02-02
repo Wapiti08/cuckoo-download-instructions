@@ -122,8 +122,21 @@ On Windows command prompt:
 ```
 taskkill /F /PID 8712(PID number)
 ```
+(4) When you meet the mysql service unrecognized error:
+Uninstall mariadb first:
+```
+sudo apt-get remove --auto-remove mariadb-server
+```
 
+Install the mysql-server using this command:
+```
+sudo apt install mysql-server
+```
 
+Then you can start your mysql service with:
+```
+sudo service mysql start
+```
 
 The following links you may need when you download the pip, Microsoft Visual C++ Compiler, etc:
 
