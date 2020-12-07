@@ -151,7 +151,5 @@ https://docs.cuckoosandbox.org/en/latest/installation/guest/network/
 
 https://www.youtube.com/watch?v=nLGJHgv6uWA
 
-# Dataset:
-[Ransomware](https://github.com/Wapiti08/Ransomware_Set)
 
 
